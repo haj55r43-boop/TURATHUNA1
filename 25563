@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج - المتجر الثقافي</title>
+</head>
+<body>
+
+    <header>
+        <h1>المتجر الثقافي</h1>
+        <p>تراثنا هويتنا وثقافتنا</p>
+    </header>
+
+    <nav>
+        <a href="index.html">الرئيسية</a> |
+        <a href="products.html">المنتجات</a> |
+        <a href="categories.html">الأقسام</a> |
+        <a href="about.html">من نحن</a> |
+        <a href="contact.html">اتصل بنا</a> |
+        <a href="login.html">تسجيل الدخول</a>
+    </nav>
+
+    <main>
+        <h2>تفاصيل المنتج</h2>
+
+        <section>
+            <h3>الثوب السوداني</h3>
+
+            <p>اسم المنتج: الثوب السوداني التقليدي</p>
+
+            <p>
+                الوصف: الثوب السوداني من أشهر الملابس
+                التراثية التي تعبر عن جمال وأصالة المرأة السودانية.
+            </p>
+
+            <p>السعر: 25000 جنيه سوداني</p>
+
+            <p>القسم: الملابس التراثية</p>
+
+            <p>حالة المنتج: متوفر</p>
+
+            <label for="quantity">الكمية:</label>
+            <input type="number" id="quantity" min="1" value="1">
+
+            <br><br>
+
+            <button type="button">إضافة إلى السلة</button>
+
+            <br><br>
+
+            <a href="products.html">العودة إلى المنتجات</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة - المتجر الثقافي 2026</p>
+    </footer>
+
+<nav>
+    <a href="products.html">→ السابق: المنتجات</a> |
+    <a href="categories.html">التالي: الأقسام ←</a>
+</nav>
+
+  
+</body>
+</html>
+

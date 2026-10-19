@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang ="ar" dir="rtl">
+<head>
+     <meta charset = "UTF-8>
+     <meta name ="viewport"
+     content ="width=device-width,
+     initial-scal=1.0">
+     <title>تراثنا</title>
+     </head>
+     <body>
+
+<nav>
+    <a href="index.html">الرئيسية</a> |
+    <a href="products.html">المنتجات</a> |
+    <a href="product-details.html">تفاصيل المنتج</a> |
+    <a href="categories.html">الأقسام</a> |
+    <a href="about.html">من نحن</a> |
+    <a href="contact.html">اتصل بنا</a> |
+    <a href="login.html">تسجيل الدخول</a>
+</nav>
+<hr>
+
+       
+     <h1>مرحبا بكم في تراثنا</h1>
+     <p>منتجاتنا الثقافية والتراثية السودانية
+     </p>
+   
+
+<nav>
+    <a href="products.html">التالي: المنتجات ←</a>
+</nav>
+
+       
+     </body>
+     </html>
+     
