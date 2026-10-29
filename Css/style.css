@@ -1,5 +1,4 @@
-
-/* الإعدادات العامة للموقع */
+/* ===== الإعدادات العامة ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,133 +13,17 @@ body {
     line-height: 1.8;
 }
 
-/* عنوان الموقع */
+/* ===== رأس الموقع ===== */
 header {
     background-color: #c49a6c;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 15px;
 }
 
 header h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-/* روابط التنقل */
-nav {
-    background-color: #8b5e3c;
-    padding: 12px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    padding: 8px;
-    display: inline-block;
-}
-
-nav a:hover {
-    background-color: #d2b48c;
-    color: #4b2e1e;
-    border-radius: 5px;
-}
-
-/* محتوى الصفحات */
-main {
-    padding: 25px;
-    min-height: 300px;
-}
-
-h2 {
-    color: #8b5e3c;
-    margin-bottom: 15px;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-/* الأزرار */
-button {
-    background-color: #8b5e3c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #6f4529;
-}
-
-/* أسفل الصفحة */
-footer {
-    background-color: #8b5e3c;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-/* الصور */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.products {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 8px !important;
-    padding: 8px !important;
-}
-
-.products .product {
-    width: 100% !important;
-    min-width: 0 !important;
-    padding: 4px !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-}
-
-.products .product img {
-    width: 100% !important;
-    height: 85px !important;
-    object-fit: cover !important;
-    display: block !important;
-}
-
-.products .product h3 {
-    font-size: 11px !important;
-    margin: 4px 0 !important;
-}
-
-
-/* ===== التنسيق العام لكل الصفحات ===== */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5e6d3;
-    color: #4b2e1e;
-    direction: rtl;
-    line-height: 1.8;
-    margin: 0;
-}
-
-header {
-    background-color: #c49a6c;
-    color: white;
-    text-align: center;
-    padding: 25px 15px;
-}
-
-header h1 {
-    margin: 0 0 8px;
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 8px;
 }
 
 header p {
@@ -148,7 +31,6 @@ header p {
 }
 
 /* ===== قائمة التنقل ===== */
-
 nav {
     background-color: #8b5e3c;
     padding: 10px;
@@ -165,14 +47,14 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #f5e6d3;
+    background-color: #d2b48c;
     color: #4b2e1e;
 }
 
 /* ===== محتوى الصفحات ===== */
-
 main {
     max-width: 1100px;
+    min-height: 300px;
     margin: auto;
     padding: 20px;
 }
@@ -180,11 +62,15 @@ main {
 h2 {
     color: #8b5e3c;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 h3 {
     color: #8b5e3c;
+}
+
+p {
+    margin-bottom: 15px;
 }
 
 section {
@@ -196,11 +82,9 @@ main section {
     border: 1px solid #e0c6a5;
     border-radius: 10px;
     padding: 15px;
-    margin-bottom: 15px;
 }
 
 /* ===== الأزرار ===== */
-
 button,
 input[type="submit"] {
     background-color: #8b5e3c;
@@ -218,7 +102,6 @@ input[type="submit"]:hover {
 }
 
 /* ===== حقول الإدخال ===== */
-
 input,
 textarea,
 select {
@@ -227,7 +110,6 @@ select {
     margin: 6px 0 14px;
     border: 1px solid #c49a6c;
     border-radius: 6px;
-    box-sizing: border-box;
     font-family: Arial, sans-serif;
     font-size: 15px;
 }
@@ -242,13 +124,18 @@ label {
     font-weight: bold;
 }
 
-/* ===== بطاقات المنتجات ===== */
+/* ===== الصور العامة ===== */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
+/* ===== بطاقات المنتجات ===== */
 .products {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
-    padding: 10px;
+    gap: 8px;
+    padding: 8px;
 }
 
 .products h2 {
@@ -259,28 +146,25 @@ label {
     background-color: #fffaf3;
     border: 1px solid #d2b48c;
     border-radius: 8px;
-    padding: 6px;
-    margin: 0;
-    min-width: 0;
+    padding: 4px;
     text-align: center;
-    box-sizing: border-box;
+    min-width: 0;
 }
 
 .products .product img {
     display: block;
     width: 100%;
-    height: 100px;
+    height: 65px;
     object-fit: cover;
     border-radius: 5px;
 }
 
 .products .product h3 {
-    font-size: 13px;
-    margin: 5px 0;
+    font-size: 11px;
+    margin: 4px 0;
 }
 
 /* ===== تفاصيل المنتج ===== */
-
 .product-details {
     max-width: 700px;
     margin: 20px auto;
@@ -291,54 +175,50 @@ label {
 
 .product-details img {
     width: 100%;
-    max-width: 350px;
-    height: auto;
+    max-width: 300px;
     display: block;
     margin: 15px auto;
     border-radius: 10px;
 }
 
-/* ===== نموذج تسجيل الدخول والاتصال ===== */
-
+/* ===== تسجيل الدخول والاتصال ===== */
 .login-form,
 .contact-form {
     max-width: 450px;
     margin: 25px auto;
     padding: 20px;
-    background-color: #fffaf3;
+    background-color: #fffaf3;ممكن ترسل الكود مرة تانية
     border: 1px solid #d2b48c;
     border-radius: 12px;
 }
 
-/* ===== أسفل الصفحة ===== */
-
+/* ===== أسفل الموقع ===== */
 footer {
     background-color: #8b5e3c;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 footer p {
     margin: 0;
 }
 
-/* ===== تنسيق الموبايل ===== */
-
+/* ===== تنسيق شاشات الهاتف ===== */
 @media (max-width: 600px) {
     header h1 {
         font-size: 23px;
     }
 
     nav a {
-        padding: 5px 7px;
+        padding: 5px 6px;
         margin: 2px;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     main {
-        padding: 12px;
+        padding: 10px;
     }
 
     .products {
@@ -347,51 +227,16 @@ footer p {
         padding: 5px;
     }
 
-    .products .product {
-        padding: 4px;
-    }
-
     .products .product img {
-        height: 85px;
+        height: 60px;
     }
 
     .products .product h3 {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .login-form,
     .contact-form {
         padding: 12px;
     }
-}
-
-/* إجبار صور المنتجات على الظهور في أعمدة */
-body .products {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 8px !important;
-    width: 100% !important;
-    padding: 8px !important;
-    box-sizing: border-box !important;
-}
-
-body .products > .product {
-    display: block !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 5px !important;
-    box-sizing: border-box !important;
-}
-
-body .products > .product img {
-    display: block !important;
-    width: 100% !important;
-    height: 90px !important;
-    object-fit: cover !important;
-}
-
-body .products > .product h3 {
-    font-size: 11px !important;
-    text-align: center;
 }
