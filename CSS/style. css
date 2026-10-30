@@ -16,7 +16,7 @@ body {
 /* ===== رأس الموقع ===== */
 header {
     background-color: #c49a6c;
-    color: white;
+    color: brond;
     text-align: center;
     padding: 20px 15px;
 }
@@ -39,7 +39,7 @@ nav {
 
 nav a {
     display: inline-block;
-    color: white;
+    color: brown;
     text-decoration: none;
     padding: 6px 10px;
     margin: 3px;
@@ -88,7 +88,7 @@ main section {
 button,
 input[type="submit"] {
     background-color: #8b5e3c;
-    color: white;
+    color: brown;
     border: none;
     padding: 10px 18px;
     border-radius: 6px;
@@ -195,7 +195,7 @@ img {
 /* ===== أسفل الموقع ===== */
 footer {
     background-color: #8b5e3c;
-    color: white;
+    color: brown;
     text-align: center;
     padding: 15px;
     margin-top: 20px;
