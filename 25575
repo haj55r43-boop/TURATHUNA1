@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات الثقافية - تراثنا</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>المتجر الثقافي - تراثنا</h1>
+    <p>اكتشف ثقافتنا ومنتجاتنا السودانية الأصيلة</p>
+</header>
+
+<nav>
+    <a href="index.html">الرئيسية</a> |
+    <a href="products.html">المنتجات</a> |
+    <a href="produces-details.html">تفاصيل المنتج</a> |
+    <a href="categories.html">الأقسام</a> |
+    <a href="about.html">من نحن</a> |
+    <a href="contact.html">اتصل بنا</a> |
+    <a href="login.html">تسجيل الدخول</a>
+</nav>
+
+<main>
+    <h2>منتجاتنا الثقافية</h2>
+  <h3>
+    إجمالي الأسعار:
+    <span id="total">0</span>
+    جنيه سوداني
+</h3>
+
+    <div class="products-container">
+
+        <div class="product">
+            <img src="imges/product2.jpg" alt="الثوب السوداني">
+            <h3>الثوب السوداني</h3>
+            <p>ثوب سوداني يعبر عن أصالة وجمال الثقافة السودانية.</p>
+            <p>السعر: 25000 جنيه سوداني</p>
+          <button onclick="addPrice(25000)">
+    إضافة للسعر الإجمالي
+</button>
+            <a href="produces-details.html?id=1">عرض التفاصيل</a>
+        </div>
+
+        <div class="product">
+            <img src="imges/product7.jpg" alt="الحرف اليدوية">
+            <h3>الحرف اليدوية</h3>
+            <p>منتجات يدوية تراثية مصنوعة بعناية وإبداع.</p>
+            <p>السعر: 15000 جنيه سوداني</p>
+          <button onclick="addPrice(15000)">
+    إضافة للسعر الإجمالي
+</button>
+            <a href="produces-details.html?id=2">عرض التفاصيل</a>
+        </div>
+
+        <div class="product">
+            <img src="imges/product8.jpg" alt="منتجات الفخار">
+            <h3>منتجات الفخار</h3>
+            <p>أوانٍ فخارية تراثية تعكس جمال الحرف السودانية.</p>
+            <p>السعر: 18000 جنيه سوداني</p>
+          <button onclick="addPrice(18000)">
+    إضافة للسعر الإجمالي
+</button>
+            <a href="produces-details.html?id=3">عرض التفاصيل</a>
+        </div>
+
+        <div class="product">
+            <img src="imges/product9.jpg" alt="    اواني يدوية">
+            <h3> اواني يدوية</h3>
+            <p>اوني يدوية تصف ابداع الشعب السوداني في الحرف اليدوية وهي من تراثنا .</p>
+            <p>السعر: 10000 جنيه سوداني</p>
+          <button onclick="addPrice(10000)">
+    إضافة للسعر الإجمالي
+</button>
+            <a href="produces-details.html?id=4">عرض التفاصيل</a>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>جميع الحقوق محفوظة - المتجر الثقافي 2026</p>
+</footer>
+
+  <script>
+
+let total = 0;
+
+function addPrice(price) {
+
+    total = total + price;
+
+    document.getElementById("total").textContent = total;
+
+}
+
+</script>
+</body>
+</html>
