@@ -1,0 +1,147 @@
+الكتابة
+ 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج - تراثنا</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>تفاصيل المنتج</h1>
+    <p>تعرف على منتجاتنا الثقافية السودانية</p>
+</header>
+
+<nav>
+    <a href="index.html">الرئيسية</a> |
+    <a href="products.html">المنتجات</a> |
+    <a href="produces-details.html">تفاصيل المنتج</a> |
+    <a href="categories.html">الأقسام</a> |
+    <a href="about.html">من نحن</a> |
+    <a href="contact.html">اتصل بنا</a> |
+    <a href="login.html">تسجيل الدخول</a>
+</nav>
+
+<main>
+
+    <section class="produces" id="details">
+
+        <h2 id="name">اسم المنتج</h2>
+
+        <img id="images" src="imges/product2.jpg"
+        alt="صورة المنتج" width="250">
+
+        <p id="description">وصف المنتج</p>
+
+        <h3 id="price">السعر</h3>
+      <button onclick="addToCart()">
+    أضف إلى السلة
+</button>
+
+
+
+        <a href="products.html">العودة إلى المنتجات</a>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>جميع الحقوق محفوظة - المتجر الثقافي 2026</p>
+</footer>
+
+<script>
+
+const products = {
+
+    1: {
+        name: "الثوب السوداني",
+        image: "imges/product2.jpg",
+        description: "ثوب سوداني يعبر عن أصالة وجمال الثقافة السودانية.",
+        price: "25000 جنيه سوداني"
+    },
+
+    2: {
+        name: "الحرف اليدوية",
+        image: "imges/product7.jpg",
+        description: "منتجات يدوية تراثية مصنوعة بعناية وإبداع.",
+        price: "15000 جنيه سوداني"
+    },
+
+    3: {
+        name: "منتجات الفخار",
+        image: "imges/product8.jpg",
+        description: "أوانٍ فخارية تراثية تعكس جمال الحرف السودانية.",
+        price: "18000 جنيه سوداني"
+    },
+
+    4: {
+        name: "أواني يدوية",
+        image: "imges/product9.jpg",
+        description: "أواني يدوية تعكس إبداع الشعب السوداني في الحرف اليدوية.",
+        price: "10000 جنيه سوداني"
+    }
+
+};
+
+const params = new URLSearchParams(window.location.search);
+
+const id = params.get("id");
+
+const product = products[id];
+
+if (product) {
+
+    document.getElementById("name").textContent = product.name;
+
+    document.getElementById("images").src = product.image;
+
+    document.getElementById("description").textContent = product.description;
+
+    document.getElementById("price").textContent = "السعر: " + product.price;
+
+} else {
+
+    document.getElementById("name").textContent = "المنتج غير موجود";
+
+}
+
+الكتابة
+function addToCart() {
+if (!product) {
+    alert("المنتج غير موجود");
+    return;
+}
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let price = parseInt(product.price);
+
+let existing = cart.find(item => item.id === id);
+
+if (existing) {
+    existing.quantity++;
+} else {
+    cart.push({
+        id: id,
+        name: product.name,
+        image: product.image,
+        price: price,
+        quantity: 1
+    });
+}
+
+localStorage.setItem("cart", JSON.stringify(cart));
+
+alert("تمت إضافة المنتج إلى السلة بنجاح");
+}
+  
+</script>
+
+</body>
+</html>
